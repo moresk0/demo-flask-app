@@ -1,0 +1,19 @@
+app: demo-flask-app
+env: happy-shape
+namespace: default
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.64.0
+values:
+  containerPort: 80
+  gitRepository: moresk0/demo-flask-app
+  gitSha: '{{ .SHA }}'
+  image:
+    dockerfile: ""
+    repository: moreskovic/demo-flask-app
+    tag: '{{ .REF_NAME }}'
+  imagePullSecrets: []
+  replicas: 1
+  resources:
+    ignoreLimits: true
