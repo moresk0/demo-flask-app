@@ -12,7 +12,7 @@ values:
   image:
     dockerfile: ""
     repository: moreskovic/demo-flask-app
-    tag: '{{ .Tags }}'
+    tag: '{{ .Tag }}'
   imagePullSecrets: []
   replicas: 1
   resources:
