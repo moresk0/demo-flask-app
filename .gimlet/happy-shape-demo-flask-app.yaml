@@ -11,7 +11,7 @@ values:
   gitSha: '{{ .SHA }}'
   image:
     dockerfile: ""
-    repository: moreskovic/demo-flask-app
+    repository: docker.io/moreskovic/demo-flask-app
     tag: '{{ .SHA }}'
   imagePullSecrets: []
   replicas: 1
